@@ -1,0 +1,432 @@
+/* --------------Body Design-------------- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+/* --------------Common CSS---------------- */
+
+.plan-heading .bogo{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF6B82;
+}
+
+.plan-heading{
+    position: relative;
+}
+
+.bogo::after{
+    position: absolute;
+    content: "";
+    width: 94px;
+    background-color: rgb(200, 200, 200);
+    height: 1px;
+    top: 10px;
+    margin-left: 5px;
+}
+.bogo::before{
+    position: absolute;
+    content: "";
+    width: 92px;
+    background-color: rgb(200, 200, 200);
+    height: 1px;
+    top: 10px;
+    right: 152px;
+}
+
+.price-plan {
+    justify-items: center;
+    height: 100vh;
+    align-content: center;
+}
+
+input[type="radio"] {
+  accent-color: #FF6B82;
+  border: 2px solid red;
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+}
+input[type="radio"]:checked {
+background-color: white;
+color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+.radio-btn {
+    margin-left: 20px;
+
+}
+
+.new-price {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.price s {
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 10px;
+}
+
+.plan-title {
+    margin-left: 7px;
+}
+
+.offer {
+    border-radius: 1px;
+    margin-left: 2px;
+    padding: 1px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #FF6B82;
+    color: white;
+}
+
+.color-opt {
+    margin-left: 5px;
+}
+
+.title-section {
+    border: 1px solid rgba(217, 217, 217, 1);
+    font-size: 14px;
+    display: flex;
+    width: 341px;
+    height: 74px;
+    align-items: center;
+    position: relative;
+}
+
+.unit-1, .unit-2 {
+    margin-bottom: 20px;
+}
+
+.size-color {
+    font-size: 11px;
+    left: 60px;
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.color {
+    position: absolute;
+    left: 73px;
+}
+/* --------------End Common CSS---------------- */
+
+
+/* --------------Unit-1---------------- */
+.standard-price {
+    font-size: 11px;
+}
+
+.price {
+    position: absolute;
+    right: 10px;
+    margin-right: 20px;
+}
+/* --------------End Unit-1---------------- */
+
+
+/* -------------Unit Expand Design-------------- */
+.unit.expanded {
+    background-color: rgb(254, 246, 247);
+    border: 2px solid rgb(255, 107, 130);
+}
+
+.unit.expanded .dropdowns {
+    max-height: 100px;
+    opacity: 1;
+}
+
+.unit.expanded .title-section {
+    border: none;
+}
+/* --------End Unit Expand Design------- */
+
+
+/* --------------Most Popular Ribbon--------------- */
+.unit-2.expanded .most-popular {
+    position: absolute;
+    right: 5px;
+    bottom: 2.5px;
+}
+
+.most-popular {
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    width: 119px;
+    height: 26px;
+    background-color: #FF6B82;
+    align-items: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+    right: 7px;
+    bottom: 1px;
+}
+
+.popular {
+    position: relative;
+    z-index: 3;
+    transform: translateY(35px);
+}
+
+.most-popular::before {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid rgb(215, 68, 91);
+    border-left: 8px solid transparent;
+}
+
+.most-popular::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: -7px;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid rgb(215, 68, 91);
+    border-right: 8px solid transparent;
+}
+/* --------------End Most Popular Ribbon--------------- */
+
+
+/* --------------Unit-2--------------- */
+.offer-2 {
+    margin-left: 0;
+}
+
+.title-section-2 {
+    background-color: rgb(254, 246, 247);
+    border: 2px solid rgb(255, 107, 130);
+}
+
+.plan-title-2 {
+    display: flex;
+    gap: 6px;
+    margin-left: 22px;
+}
+
+.plan-title-2 input {
+    transform: translateY(-2px);
+}
+
+.price-2 {
+    position: absolute;
+    right: 30px;
+}
+
+.price-2 s {
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 10px;
+}
+/* --------------End Unit-2---------------- */
+
+
+/* -----------Select Box & Dropdown Design--------- */
+.dropdowns .size {
+    display: block;
+    position: relative;
+}
+
+.dropdowns {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    font-size: 14px;
+    width: 341px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.unit.expanded .dropdowns {
+    width: 341px;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.dropdown-1 .drop-1,
+.dropdown-2 .drop-2,
+.dropdown-3 .drop-3 {
+    display: flex;
+    gap: 3px;
+}
+
+.dropdown-1 select,
+.dropdown-2 select,
+.dropdown-3 select {
+    position: relative;
+    appearance: none;
+    width: 65.98px;
+    height: 25.31px;
+    padding: 5px;
+    border-color: rgb(217, 217, 217);
+}
+
+.drop-1::after {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    right: 0px;
+    left: 77px;
+    top: 7px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.drop-1::before {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    right: 145px;
+    top: 7px;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+}
+
+.drop-2::after {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    left: 77px;
+    top: 7px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.drop-2::before {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    right: 145px;
+    top: 7px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.drop-3::after {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    left: 77px;
+    top: 17px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.drop-3::before {
+    content: '▼';
+    color: black;
+    font-size: 11px;
+    right: 145px;
+    top: 17px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.dropdown-1, .dropdown-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 35px;
+    margin: -20px 0 10px 35px;
+    position: relative;
+}
+
+.dropdown-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 35px;
+    margin: -30px 0 10px 35px;
+    position: relative;
+}
+
+.drop-3 {
+    padding: 10px 0;
+}
+/* ----------------End Select Box Design------------- */
+
+
+/* --------------Unit-3---------------- */
+.offer-3 {
+    position: absolute;
+    left: 92px;
+    top: 20px;
+}
+
+.plan-title-3 {
+    display: flex;
+    gap: 6px;
+    margin-left: 22px;
+}
+
+.plan-title-3 input {
+    transform: translateY(-2px);
+}
+/* --------------End Unit-3---------------- */
+
+
+.delivery{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 341px;
+    padding: 15px 0;
+}
+
+.free-delivery{
+    font-weight: 500;
+    color: #FF6B82;
+    font-size: 14px;
+}
+
+.total label{
+    font-size: 14px;
+}
+
+.total-amt{
+    font-weight: 600;
+}
+
+.add-cart{
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    width: 341px;
+    height: 35px;
+    background-color: #FF6B82;
+    color: white;
+}
+
+.add-cart strong{
+    font-size: 14px;
+}
+
+.powered{
+    padding-bottom: 20px;
+    text-align: end;
+    line-height: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.4px;
+}
