@@ -90,6 +90,7 @@ color: white;
 }
 
 .title-section {
+    cursor: pointer;
     border: 1px solid rgba(217, 217, 217, 1);
     font-size: 14px;
     display: flex;
@@ -407,6 +408,7 @@ color: white;
 }
 
 .add-cart{
+    cursor: pointer;
     font-size: 12px;
     border-radius: 5px;
     text-align: center;
